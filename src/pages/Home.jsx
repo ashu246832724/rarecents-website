@@ -46,11 +46,6 @@ export function Home() {
       <section className="section">
         <div className="container grid-3">
           <div className="card">
-            <div className="kicker">MCA CIN</div>
-            <div className="h2">U69200UP2025PTC227099</div>
-            <p className="muted">Registered as Rarecents Assurance Private Limited in India.</p>
-          </div>
-          <div className="card">
             <div className="kicker">Software Expertise</div>
             <p className="muted">Zoho Books, QuickBooks Online, Tally Prime, MS Excel (advanced), legal tax and GST utilities.</p>
           </div>

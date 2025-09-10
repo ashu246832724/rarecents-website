@@ -33,8 +33,7 @@ export function Contact() {
           </div>
           <div className="card">
             <div className="h2">Regulatory</div>
-            <div className="muted">Ministry of Corporate Affairs CIN</div>
-            <div className="h3">U69200UP2025PTC227099</div>
+            <div className="muted">Registered in India.</div>
           </div>
         </div>
       </section>

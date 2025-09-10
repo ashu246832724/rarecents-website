@@ -29,7 +29,6 @@ export function Layout({ children }) {
         <div className="container footer-grid">
           <div>
             <div className="footer-brand">Rarecents Assurance Pvt Ltd</div>
-            <div className="footer-sub">MCA CIN: U69200UP2025PTC227099</div>
             <div className="footer-sub">Headquarter: Lucknow, Uttar Pradesh, India</div>
           </div>
           <div>
