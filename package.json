@@ -29,5 +29,8 @@
   "description": "Rarecents Assurance Private Limited website",
   "author": "Rarecents Assurance Pvt Ltd",
   "license": "MIT",
-  "homepage": "."
+  "homepage": ".",
+  "engines": {
+    "node": ">=20.19.0 <21 || >=22.12.0"
+  }
 }
