@@ -1,3 +1,5 @@
+import bhaskarPhoto from '../assets/bhaskar.jpg'
+
 function Leader({ name, title, link, photoSrc, children }) {
   return (
     <div className="card leader-card">
@@ -40,7 +42,7 @@ export function Leadership() {
           <Leader name="Indu Dwivedi" title="Director" link="https://www.linkedin.com/in/indu-dwivedi" photoSrc={"https://drive.google.com/thumbnail?id=1KBZyR6NHlBW_ELhiyYv5yQnc69EI6l35&sz=w800"}>
             Senior Financial Analyst at Acuity Knowledge Partners. Deep expertise in financial models (DCF, comps, NAV), investor reporting, due diligence, portfolio analytics, and client engagement across global mandates.
           </Leader>
-          <Leader name="Bhaskar Rai" title="Director" link="https://www.linkedin.com/in/raibhaskar" photoSrc={""}>
+          <Leader name="Bhaskar Rai" title="Director" link="https://www.linkedin.com/in/raibhaskar" photoSrc={bhaskarPhoto}>
             7+ years in stressed assets, investment due diligence, modeling, taxation, and audits. Managed ₹35B+ transactions incl. ARC deals; earlier audit and compliance experience with major banks and corporates.
           </Leader>
         </div>

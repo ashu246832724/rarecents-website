@@ -21,7 +21,7 @@ export function Contact() {
           <div className="card">
             <div className="h2">Write to us</div>
             <form className="form" onSubmit={(e) => e.preventDefault()}>
-              <div style={{ display: 'grid', gap: 10 }}>
+              <div style={{ display: 'grid', gap: 10, alignItems: 'start', justifyItems: 'start' }}>
                 <input className="input" placeholder="Name" required />
                 <input className="input" type="email" placeholder="Business Email" required />
                 <input className="input" placeholder="Company" />
