@@ -26,6 +26,15 @@ body {
   background: var(--bg);
 }
 
+/* Global responsive images */
+img { max-width: 100%; height: auto; }
+
+/* Requested responsive leader layout */
+.leader { display: flex; gap: 2rem; }
+@media (max-width: 768px) {
+  .leader { flex-direction: column; text-align: center; }
+}
+
 .container { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
 
 .site { display: grid; grid-template-rows: auto 1fr auto; min-height: 100vh; }
@@ -76,6 +85,12 @@ body {
 @media (max-width: 900px) {
   .grid-3, .footer-grid { grid-template-columns: 1fr; }
   .hero h1 { font-size: 32px; }
+}
+
+/* Stack and center leadership on small screens */
+@media (max-width: 768px) {
+  .grid-3 { grid-template-columns: 1fr; }
+  .leader-card { align-items: center; text-align: center; }
 }
 
 /* Contact form responsiveness */

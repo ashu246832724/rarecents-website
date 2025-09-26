@@ -118,3 +118,4 @@ npm run lint         # Check code quality
 ---
 *Built with React, Vite, and modern web technologies*
 
+
