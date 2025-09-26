@@ -6,7 +6,7 @@ function Leader({ name, title, link, photoSrc, children }) {
         <img
           className="leader-photo"
           src={photoSrc}
-          alt={name}
+          alt={name === "Bhaskar Rai" ? "Bhaskar Rai – Leadership Team" : name}
           loading="lazy"
           referrerPolicy="no-referrer"
           onError={(e) => { e.currentTarget.style.display = 'none' }}
