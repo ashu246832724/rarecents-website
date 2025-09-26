@@ -182,6 +182,64 @@ Update CSS variables in `src/styles/modern.css`:
 - **Images**: Replace in `src/assets/` directory
 - **Links**: Update href attributes in components
 
+### Image Management
+
+#### Replacing Images
+The website uses copyright-free images from Unsplash with automatic carousel functionality. To replace images:
+
+1. **Find new images**: Use Unsplash, Pexels, or other royalty-free sources
+2. **Update image URLs**: Replace URLs in component files
+3. **Maintain aspect ratio**: Use 500x300px or similar proportions
+4. **Test responsiveness**: Ensure images work on all devices
+
+#### Image Locations by Section:
+
+**Home Page Services** (`src/pages/ModernHome.jsx`):
+- Accounting & Bookkeeping: Lines 36-40
+- Taxation & Compliance: Lines 52-56  
+- Audit & Assurance: Lines 68-72
+
+**About Page Values** (`src/pages/ModernAbout.jsx`):
+- Integrity: Lines 123-127
+- Excellence: Lines 139-143
+- Partnership: Lines 155-159
+
+**Clients Page Trust Indicators** (`src/pages/ModernClients.jsx`):
+- Proven Track Record: Lines 99-103
+- Diverse Expertise: Lines 115-119
+- Long-term Partnerships: Lines 131-135
+
+**Contact Page Services** (`src/pages/ModernContact.jsx`):
+- Quick Response: Lines 165-169
+- Free Consultation: Lines 181-185
+- Expert Team: Lines 197-201
+
+#### Image Carousel Component
+The `ImageCarousel` component automatically rotates through multiple images every 3 seconds. To customize:
+
+```jsx
+<ImageCarousel 
+  images={[
+    'https://your-image-1.jpg',
+    'https://your-image-2.jpg',
+    'https://your-image-3.jpg'
+  ]}
+  alt="Descriptive alt text"
+  className="w-full h-48 object-cover rounded-lg mb-4"
+/>
+```
+
+#### Single Image (No Carousel)
+To use a single static image instead of carousel:
+
+```jsx
+<img 
+  src="https://your-image.jpg" 
+  alt="Descriptive alt text"
+  className="w-full h-48 object-cover rounded-lg mb-4"
+/>
+```
+
 ## 📊 Performance
 
 ### Optimizations

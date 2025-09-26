@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { ImageCarousel } from '../components/ImageCarousel'
 
 export function ModernHome() {
   return (
@@ -31,11 +32,15 @@ export function ModernHome() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card animate-fade-in-up">
-              <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                </svg>
-              </div>
+              <ImageCarousel 
+                images={[
+                  'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+                  'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+                  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+                ]}
+                alt="Accounting and Bookkeeping Services"
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
               <h3 className="text-xl font-semibold mb-3">Accounting & Bookkeeping</h3>
               <p className="text-muted mb-4">
                 Outsourced finance operations, MIS, reconciliations, payroll accounting, budgeting and forecasting.
@@ -44,11 +49,15 @@ export function ModernHome() {
             </div>
 
             <div className="card animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-              <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
+              <ImageCarousel 
+                images={[
+                  'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+                  'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+                  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+                ]}
+                alt="Taxation and Compliance Services"
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
               <h3 className="text-xl font-semibold mb-3">Taxation & Compliance</h3>
               <p className="text-muted mb-4">
                 Income Tax, GST, TDS, litigation, representation, filings, and MCA compliances.
@@ -57,11 +66,15 @@ export function ModernHome() {
             </div>
 
             <div className="card animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-                </svg>
-              </div>
+              <ImageCarousel 
+                images={[
+                  'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+                  'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+                  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+                ]}
+                alt="Audit and Assurance Services"
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
               <h3 className="text-xl font-semibold mb-3">Audit & Assurance</h3>
               <p className="text-muted mb-4">
                 Internal, concurrent, bank, and audit readiness for funding and diligence.

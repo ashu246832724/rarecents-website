@@ -6,7 +6,7 @@ function ModernLeader({ name, title, link, photoSrc, children }) {
       {photoSrc && (
         <div className="mb-6">
           <img
-            className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-accent shadow-lg group-hover:scale-105 transition-transform duration-300"
+            className="w-40 h-40 rounded-full mx-auto object-cover border-4 border-accent shadow-lg group-hover:scale-105 transition-transform duration-300"
             src={photoSrc}
             alt={name === "Bhaskar Rai" ? "Bhaskar Rai – Leadership Team" : name}
             loading="lazy"

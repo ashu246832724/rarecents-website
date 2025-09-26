@@ -1,3 +1,5 @@
+import { ImageCarousel } from '../components/ImageCarousel'
+
 export function ModernAbout() {
   return (
     <div>
@@ -118,11 +120,15 @@ export function ModernAbout() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card text-center">
-              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
+              <ImageCarousel 
+                images={[
+                  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+                  'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+                  'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+                ]}
+                alt="Integrity in Business"
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
               <h3 className="text-xl font-semibold mb-3">Integrity</h3>
               <p className="text-muted">
                 We maintain the highest ethical standards in all our professional relationships and business practices.
@@ -130,11 +136,15 @@ export function ModernAbout() {
             </div>
 
             <div className="card text-center">
-              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
+              <ImageCarousel 
+                images={[
+                  'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+                  'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+                  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+                ]}
+                alt="Excellence in Service"
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
               <h3 className="text-xl font-semibold mb-3">Excellence</h3>
               <p className="text-muted">
                 We strive for excellence in every project, delivering superior results that exceed client expectations.
@@ -142,11 +152,15 @@ export function ModernAbout() {
             </div>
 
             <div className="card text-center">
-              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </div>
+              <ImageCarousel 
+                images={[
+                  'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+                  'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80',
+                  'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'
+                ]}
+                alt="Partnership and Collaboration"
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
               <h3 className="text-xl font-semibold mb-3">Partnership</h3>
               <p className="text-muted">
                 We build lasting relationships based on trust, collaboration, and mutual success with our clients.
